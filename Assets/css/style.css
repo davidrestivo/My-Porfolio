@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f7f5f7;
   color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
@@ -18,10 +18,11 @@ body {
   padding-top: 15px;
   background-color: #2f3132;
   padding-bottom:  20px;
-  height: 65  px;
+  height: 70px;
   font-size: 20px;
   text-align: right;
   display: flex;
+  
 
   
 }
@@ -31,17 +32,10 @@ body {
   font-size: 30px;
   height: 40px;
   width: 270px;
+  margin-right: 800px;
   background-color: lightblue;
   color:#2f3132;
   
-}
-
-
-a {
-  color: lightblue;
- 
-  
-
 }
 
 .nav-links {
@@ -49,9 +43,14 @@ a {
   margin: 15px;
   color: lightblue;
   
-
-
 }
+
+
+a {
+  color: lightblue;
+ 
+}
+
 
 
 
@@ -65,32 +64,88 @@ a {
 .header  {
 position: absolute;
 bottom: 16px;
-right: 16px;
-width: 200  px;
+right: 60px;
+height: 40px;
+width: 220px;
 background-color: lightblue;
+margin: auto;
+line-height: 40px;
 text-align: center;
-padding-right: 10px;
-
 
 }
 
-.paragraph {
-  color: #ffffff;
-  font-size: 12px;
-  text-align: center;
-  padding: 10px;
+.cat-section-align {
+  display:inline-block;
+  display: flex;
+  text-justify: auto;
+}
+
+.positioning-lft-all {
+  margin-bottom: 20px;
+  width: 300px;
+  
+}
+
+.h2-all {
+  object-position: right;
+  border-right: 2px solid rgb(50, 55, 93);
+  color: rgb(50, 55, 93);
+  font-size: 45px;
+  padding-right: 5px;
+  display: flex;
+  justify-content:flex-end;
 
 }
 
-.contact {
-  color: #ffffff;
-  font-size: 30px;
-  text-align: center;
-  padding: 10px;
+
+
+.paragraph-alignment {
+  font-size: 15px;
+  padding-left: 30px;
+  width: 800px;
+       
+}
+
+.contact-alignment {
+  font-size: 15px;
+  padding-left: 30px;
+  width: 1000px;
+  color: rgb(50, 55, 93); 
+       
+}
+
+.h2-contact {
+  object-position: right;
+  border-right: 2px solid rgb(50, 55, 93);
+  color: rgb(50, 55, 93);
+  font-size: 45px;
+  padding-right: 5px;
+  display: flex;
+  justify-content:right;
+  justify-items:end;
 
 }
 
-.container {
+.positioning-lft-contact {
+  margin-bottom: 20px;
+  width: 270px;
+  display:inline-block;
+  
+}
+
+.contact-links {
+  display:inline-block;
+  margin: 30px;
+
+}
+
+article ul li a {
+  color: rgb(50, 55, 93);
+}
+
+
+
+/* .container {
   margin: 50px;
   margin: auto;
   display: flex;
@@ -99,9 +154,9 @@ padding-right: 10px;
 
   
   
-}
+} */
 
-.formcheck{
+/* .formcheck{
  
   border: 2px solid rgb(30, 0, 139);
   width: 750px;
@@ -126,20 +181,11 @@ padding-right: 10px;
   
   font-size: 24px;
   display: block;
-  text-align: center;
+  text-align: center; */
 
 
-}
-
-.footer-format {
-
-  padding: 15px;
-  text-align: center;
-  font-size: 16px;
- 
-  background-color: #2a607c;
+/* } */
 
 
-}
 
 

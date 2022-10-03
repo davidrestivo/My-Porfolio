@@ -12,17 +12,17 @@
 <!-- Working on the header alignment and coloring -->
 <body>
     <header>
-        <nav>           
+        <nav>          
             <ul class="top-nav">
-                <li class="heading">David Restivo</li>
+                <h1 class="heading">David Restivo</h1> 
                 <li class="nav-links">
-                    <a  href="https://github.com/davidrestivo/Davids-Landing-Page" target="_blank" rel="noreferrer noopener">About Me</a>
+                    <a  href="#about-me">About Me</a>
                 </li>
                 <li class="nav-links">
                     <a href="https://www.facebook.com/david.restivo.353" target="_blank" rel="noreferrer noopener">Work</a>
                 </li>
                 <li class="nav-links">
-                    <a href="#Name-Input">Contact Me</a>
+                    <a href="#contact-me">Contact Me</a>
                 </li>
                 <li class="nav-links">
                     <a href="#Name-Input">Resume</a>
@@ -40,20 +40,49 @@
                 <h1 class="header">My Porfolio</h1>
     </section>
 
-    <section>
-        <h3 class="paragraph">
-            This is my landing page mini project. I don't know what I'm doing, but I guess I'm getting there!
-        </h3>
+<!-- adding the sections for the links -->
+    <section class="cat-section-align">
+        <article id="about-me" class="positioning-lft-all">
+            <h2 class="h2-all">About<br>Me</h2>
+        </article>
+        <article class="paragraph-alignment">
+            <p>
+                I am a native Texan living in NY for 22 years. I am semi-professional violinist and work as a programmer for an automation company in NYC.
 
-    <section>
-        <h3 class="contact">
-            Contact Me!
-        </h3>
+                I have played violin for 37 years. I mostly play orchestral music and chamber music. I also am on the board of several musical groups in Westchester County NY.
+
+                My plans for my future are to continue to work as a programmer and learn more of the field, in order to make myself more marketable.
+            </p>
+        </article>
+
     </section>
-
+    <!-- adding formatting to the contact sect -->
+   <section>
+        <nav> 
+            <article class="contact-alignment">        
+                <ul>
+                    <li id="contact-me" class="positioning-lft-contact">
+                    <h2 class="h2-contact">Contact<br>Me</h2>
+                    </li>
+                    <li class="contact-links">
+                        <a href="845-8420010">845-842-0010</a>
+                    </li>
+                    <li class="contact-links">
+                        <a href="mailto:davidrestivo27@gmail.com">davidrestivo27@gmail.com</a>
+                    </li>
+                    <li class="contact-links">
+                        <a href="https://github.com/davidrestivo?tab=repositories">GitHub</a>
+                    </li>
+                    <li class="contact-links">
+                        <a href="https://www.facebook.com/david.restivo.353">Facebook</a>
+                    </li>
+                </ul>
+            </article>
+        </nav>    
     </section>
+  
 
-    <div class="container">
+    <!-- <div class="container">
         <form class="formcheck" action="action_page.php">
       
           <label id="form-label-text" for="fname">Name</label>
@@ -65,15 +94,7 @@
           <input type="submit" value="Submit">
       
         </form>
-    </div>
-
-    <footer>
-       
-        <h1 Class="footer-format">
-            © David's New Page
-        </h1>
-
-    </footer>
+    </div> -->
 
 
 </body>
