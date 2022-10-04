@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background-color: rgb(44, 45, 60);
+  background-color: rgb(52, 52, 55);
   display: flex;
   height: 70px;
   font-size: 20px;
@@ -35,6 +35,7 @@ header {
 
 #heading{
   padding-right: 10px;
+  padding-left: 10px;
   display: inline-block;
   align-items: flex-start;
   font-size: 30px;
@@ -50,13 +51,14 @@ header {
   align-items: flex-end;
   margin: 10px;
   padding-right: 20px;
-  color: lightblue; 
+  color: var(--light); 
+  font-size: 18px;
   
 }
 
 
 a {
-  color: lightblue;
+  color: var(--light);;
  
 }
 
@@ -65,6 +67,12 @@ a {
   position:relative;
   text-align: center;
   width: 100%;
+  height: 300px;
+
+}
+
+aside:hover {
+  opacity: 0.5;
 
 }
 
@@ -107,6 +115,7 @@ text-align: center;
   display: flex;
   justify-content:flex-end;
   text-align: right;
+  height: 150px;
 
 }
 
@@ -134,13 +143,15 @@ text-align: center;
   display: flex;
   justify-content:flex-end;
   text-align: right;
-  height: 750px;
+  height: 710px;
 
 }
 
 .image-padding-work {
   position:relative;
+  margin-top: 25px;
   width: 380%;
+  height: 53%;
   margin-left: 35px;
   border: 4px solid var(--light);
 
@@ -273,6 +284,20 @@ text-align: center;
 
 
 /* adding formatting to the contact sect */
+.h2-contact {
+  object-position: right;
+  border-right: 2px solid var(--dark);
+  color: var(--dark);
+  font-size: 35px;
+  padding-right: 5px;
+  margin-left: 10px;
+  display: flex;
+  justify-content:flex-end;
+  text-align: right;
+  height: 90px;
+
+}
+
 .contact-alignment {
   display: flex;
   margin-top: 25px;
@@ -296,6 +321,8 @@ text-align: center;
   display: inline-block;
   align-items: flex-end;
   margin-left: 80px;
+  font-size: 16px;
+  padding-left: 0px;
 
 }
 
@@ -307,4 +334,78 @@ article ul li a {
 
 
 
+/* Added responsive sizing attributes */
 
+@media screen and (max-width: 900px) {
+ :root {
+  --light: orange;
+  --dark: red;
+  }
+
+.nav-links {
+  margin: 3px;
+  padding-right: 10px; 
+  font-size: 14px;
+
+  }
+
+.image-padding {
+  height: 200px;
+  
+  }
+
+
+.image-padding-work {
+  position:relative;
+  width: 200%;
+  height: 40%;
+ 
+  }
+
+.image-padding-led-top-left {
+  position: relative;
+  width: 100%;  
+  margin-top: 350px;
+
+  } 
+
+.image-padding-led-top-right {
+  position: relative;
+  width: 100%;
+  margin-top: 350px;
+  margin-left: -300%;
+
+  }
+
+.tag-small-boxes-top-right {
+  left: -300%;
+
+  }
+
+.image-padding-led-bottom-left {
+  width: 100%;
+  margin-top: 480px;
+  margin-left: -501%;
+
+  }
+
+.image-padding-led-bottom-right {
+  position: relative;
+  width: 100%;
+  margin-top: 480px;
+  margin-left: -500%;
+
+  }
+
+.tag-small-boxes-bottom-right {
+  left: -500%;
+
+  }
+
+.contact-links {
+  margin-left: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+
+  }
+}
