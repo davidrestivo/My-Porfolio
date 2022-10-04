@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>David's Landing page</title>
+    <!-- changed the pages title -->
+    <title>David Restivo's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -12,14 +13,14 @@
 <!-- Working on the header alignment and coloring -->
 <body>
     <header>
-        <nav>          
-            <ul class="top-nav">
-                <h1 class="heading">David Restivo</h1> 
+        <h1 id="heading">David Restivo</h1> 
+        <nav>         
+            <ul class="top-nav"></ul>
                 <li class="nav-links">
                     <a  href="#about-me">About Me</a>
                 </li>
                 <li class="nav-links">
-                    <a href="https://www.facebook.com/david.restivo.353" target="_blank" rel="noreferrer noopener">Work</a>
+                    <a href="#work" target="_blank" rel="noreferrer noopener">Work</a>
                 </li>
                 <li class="nav-links">
                     <a href="#contact-me">Contact Me</a>
@@ -48,22 +49,52 @@
         <article class="paragraph-alignment">
             <p>
                 I am a native Texan living in NY for 22 years. I am semi-professional violinist and work as a programmer for an automation company in NYC.
-
+                <br>
+                <br>
                 I have played violin for 37 years. I mostly play orchestral music and chamber music. I also am on the board of several musical groups in Westchester County NY.
-
+                <br>   
+                <br> 
                 My plans for my future are to continue to work as a programmer and learn more of the field, in order to make myself more marketable.
             </p>
         </article>
 
     </section>
+    <!-- working on box allignment -->
+    <section class="cat-section-work">
+        <article id="work" class="positioning-lft-all">
+            <h2 class="h2-work">Work</h2>
+        </article>
+        <aside><a href="https://davidrestivo.github.io/Horiseon-code-refactor/" target="_blank" rel="noreferrer noopener">
+            <img class="image-padding-work" src="./Assets/images/digital-marketing-meeting.jpg" height="450" alt="horisen Project"></a>
+            <h1 class="tag-work"> First Project</h1>
+        </aside>
+        <container class="top-boxes">
+            <aside>
+                <img class="image-padding-led-top-left" src="./Assets/images/LED-Wall.png" height="125" alt="LED Wall"></a>
+                <h1 class="tag-small-boxes-top-left"> LED Wall</h1>
+            </aside>
+            <aside>
+                <img class="image-padding-led-top-right" src="./Assets/images/Calculator.png" height="125" alt="Calculator"></a>
+                <h1 class="tag-small-boxes-top-right"> Calculator</h1>
+            </aside>
+            <aside>
+                <img class="image-padding-led-bottom-left" src="./Assets/images/Pastels.png" height="125" alt="Pastels"></a>
+                <h1 class="tag-small-boxes-bottom-left"> Pastel Puzzels</h1>
+            </aside>
+            <aside>
+                <img class="image-padding-led-bottom-right" src="./Assets/images/landscape.png" height="125" alt="Pastels"></a>
+                <h1 class="tag-small-boxes-bottom-right"> Pastel Puzzels</h1>
+            </aside>
+        </container>    
+           
+    </section>
+    
     <!-- adding formatting to the contact sect -->
    <section>
-        <nav> 
-            <article class="contact-alignment">        
+        <nav class="contact-alignment"> 
+            <article id="contact-me" class="positioning-lft-contact">
+                <h2 class="h2-all">Contact<br>Me</h2>        
                 <ul>
-                    <li id="contact-me" class="positioning-lft-contact">
-                    <h2 class="h2-contact">Contact<br>Me</h2>
-                    </li>
                     <li class="contact-links">
                         <a href="845-8420010">845-842-0010</a>
                     </li>
@@ -71,30 +102,15 @@
                         <a href="mailto:davidrestivo27@gmail.com">davidrestivo27@gmail.com</a>
                     </li>
                     <li class="contact-links">
-                        <a href="https://github.com/davidrestivo?tab=repositories">GitHub</a>
+                        <a href="https://github.com/davidrestivo?tab=repositories" target="_blank" rel="noreferrer noopener">GitHub</a>
                     </li>
                     <li class="contact-links">
-                        <a href="https://www.facebook.com/david.restivo.353">Facebook</a>
+                        <a href="https://www.facebook.com/david.restivo.353" target="_blank" rel="noreferrer noopener">Facebook</a>
                     </li>
                 </ul>
             </article>
         </nav>    
     </section>
-  
-
-    <!-- <div class="container">
-        <form class="formcheck" action="action_page.php">
-      
-          <label id="form-label-text" for="fname">Name</label>
-          <input id="Name-Input" class="form-size" type="text" id="name" name="name" placeholder="Your name..">
-      
-          <label id="form-label-text" for="lname">email address</label>
-          <input class="form-size" type="text" id="email" name="email" placeholder="Your email Here...">
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-    </div> -->
 
 
 </body>
